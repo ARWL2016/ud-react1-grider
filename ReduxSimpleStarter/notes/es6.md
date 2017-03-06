@@ -1,0 +1,2 @@
+####Object Destructuring 
+`import { Component } from 'react';` is equivalent to `const Component = React.Component;` The {} allows us to pull a property of an object and assign that property to the same variable.  
