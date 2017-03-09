@@ -5,7 +5,7 @@
 - if we declare a component with `class SearchBar extends React.Component` then our class inherits properties and methods from the React Component class. 
 
 ####State 
-- An object on each class-based component. 
+- An object on each class-based component. It's a component-level attribute.  
 - Functional components do not have state.  
 - When updated, the component and all child components are automatically rerendered.  
 - In ES6, we use `constructor` to set initial state. This is called automatically each time the component is instantiated / rendered. 
@@ -23,3 +23,7 @@
 - Added as an attribute to a JSX Component tag.  
 - In a functional component, (props) are an argument, available as `props`. 
 - In a class component, props are available anywhere as this.props 
+
+####Callback Functions  
+- Adding a callback function to props is a good way to do parent-child communication, especially for input handlers.  
+- Redux is an alternative.  
