@@ -1,25 +1,17 @@
-# ReduxSimpleStarter
+###Modern React with Redux (Udemy: Stephen Grider)
+####React Weather App 
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+####Start 
+- npm start will run webpack and open app in webpack-dev-server with a virtual bundle
 
-###Getting Started###
+####Key Topics 
+- Mapping react components to Redux  
+- Making asynchronous ajax requests in redux  
 
-There are two methods for getting started with this repo.
+####Libraries in Focus  
+- Redux 
+- Redux-Promise  
+- React-Redux  
 
-####Familiar with Git?#####
-Checkout this repo, install dependencies, then start the gulp process with the following:
-
-```
-	> git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
-	> cd ReduxSimpleStarter
-	> npm install
-	> npm start
-```
-
-####Not Familiar with Git?#####
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-	> npm install
-	> npm start
-```
+####Other Libraries 
+- Axios  
