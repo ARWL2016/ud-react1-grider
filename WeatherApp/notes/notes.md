@@ -10,3 +10,5 @@
 
 ####Middleware in Redux 
 - the middleware functions sit between the action creator and the reducers, and act like a gatekeeper  
+- Redux-Promise takes in a promise from the action-creator and pauses execution until the promise resolves, then passes the action (with the response data now attached to the payload) to the reducer. 
+- Redux-Promise copes with the async request, so that the action and reducer functions can remain synchronous.  
