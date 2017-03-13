@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'; 
+import { bindActionCreators } from 'redux'; 
+import { fetchWeather } from '../actions/index'; 
+// does this import alone make the func available on props? 
+// or does it require mapDispatchToProps? 
 
-export default class SearchBar extends Component {
+class SearchBar extends Component {
   constructor(props) {
     super(props); 
 
     this.state = { term: '' };
 
     this.onInputChange = this.onInputChange.bind(this); 
+    this.onFormSubmit = this.onFormSubmit.bind(this); 
   }
 
   onInputChange(e) {
@@ -16,6 +22,9 @@ export default class SearchBar extends Component {
 
   onFormSubmit(e) {
     e.preventDefault(); 
+
+    this.props.fetchWeather(this.state.term); 
+    this.setState({term: ''});
   }
 
   render() {
@@ -34,3 +43,11 @@ export default class SearchBar extends Component {
     );
   }
 }
+
+// make action flow to middleware and reducers  
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ fetchWeather }, dispatch)
+}
+
+// no mapStateToProps func - so null (no state needed for this comp)
+export default connect(null, mapDispatchToProps)(SearchBar); 

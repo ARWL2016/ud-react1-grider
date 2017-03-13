@@ -7,3 +7,6 @@
 - refresh the page on submit 
 - clear form input on submit 
 - submit on enter  (this ) 
+
+####Middleware in Redux 
+- the middleware functions sit between the action creator and the reducers, and act like a gatekeeper  

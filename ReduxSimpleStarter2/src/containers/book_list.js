@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'; 
 import { selectBook } from '../actions/index';
+// does this import alone make the func available on props? 
+// or does it require mapDispatchToProps? 
 import { bindActionCreators } from 'redux'; //this func makes actions flow to reducers
 
 class BookList extends Component {
