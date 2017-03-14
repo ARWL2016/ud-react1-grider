@@ -6,12 +6,14 @@
 
 ####Key Topics 
 - Mapping react components to Redux  
-- Making asynchronous ajax requests in redux  
+- Making asynchronous ajax requests in redux 
+- Visualising data with Sparklines   
 
 ####Libraries in Focus  
 - Redux 
 - Redux-Promise  
 - React-Redux  
+- Sparklines 
 
 ####Other Libraries 
 - Axios  
