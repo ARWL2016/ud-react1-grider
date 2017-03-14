@@ -23,3 +23,17 @@
 
 ####Keys
 - These should be applied to the top level element in a list
+
+####ES6 Stateless Functional Component
+- `export default (props) => { return () }`
+
+####Ref 
+- Gives us a reference to an HTML element that has been rendered to the page. 
+- Google maps can use this to render an embedded map
+- Refs is useful for integrating with 3rd party libraries that are difficult to integrate with React  
+
+####ES6 Const
+- const is a value that cannot be reassigned. But, it can contain changing values. For example, if we have a function `const result = a + b` then we can pass in different values and the value of result will change. What we cannot do is reassign to `result = a - b`. 
+- Therefore, if const is a number or a string, then it is immutable. But if it is an object, we can change values inside the object. We can also add new properties. 
+- If const is a function, that function can return different values. 
+  

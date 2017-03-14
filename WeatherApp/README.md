@@ -14,6 +14,7 @@
 - Redux-Promise  
 - React-Redux  
 - Sparklines 
+- Google Maps API (via CDN)
 
 ####Other Libraries 
 - Axios  
